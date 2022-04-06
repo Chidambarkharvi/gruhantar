@@ -1,0 +1,127 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    width: 100%;
+    position:sticky;
+    top:0px;
+}
+
+
+.packages{
+    height: 100%;
+    width: 70%;
+    border: 2px solid rgb(255, 136, 0);
+    margin-top:70px;
+    border-radius: 20px;
+    padding:50px;
+}
+
+.options{
+    display:flex;
+    flex-direction:row;
+justify-content:space-between;
+
+}
+
+
+.guhantara_img{
+height:150px;
+}
+
+.shilhaandara_img{
+background-color: rgb(0, 0, 0);
+}
+
+.guhantara p , .shilhaandara p{
+    font-size:30px
+}
+
+.guhantara{
+
+}
+
+.shilhaandara{
+    
+
+}
+.description{
+    width: 80%;
+    padding:20px 0px;
+}
+/* .Gruhantara_package{
+    display:none;
+} */
+
+
+.P_and_d{
+    width:73%;
+    margin-top:80px;
+border-radius: 10px;
+    border:2px solid black;
+    display:flex;
+    flex-direction:row;
+justify-content:space-between;
+padding:5px 50px;
+}
+
+ .guhantara img:hover {
+     transform:scale(1.2);
+
+ }
+
+ .shilhaandara img:hover {
+    transform:scale(1.2);
+    display:block
+
+}
+
+.headcount{
+    display:flex;flex-direction:row;
+    justify-content:space-around;
+    border: 2px solid rgb(244, 149, 149);
+    width: 50%;
+    margin-top:20px;
+    border-radius:20px;
+    margin-left: 20px;;
+
+
+}
+
+.headcount h5{
+
+    font-size:30px;
+}
+.payment{
+    border: 1px solid rgb(104, 46, 46);
+    border-radius:12px;
+    padding:10px 0px
+}
+
+.pay-button button{
+    padding:5px 5px;
+    width:100px;
+    margin-top:40px;
+    margin-left: 50px;
+    
+}
+
+
+.adult{
+    display:flex;flex-direction:row;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .options{
+        display:flex;
+        flex-direction:column;
+    justify-content:space-between;
+    
+
+    }
+
+}
