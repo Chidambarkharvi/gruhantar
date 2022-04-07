@@ -1,85 +1,179 @@
-body{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0u3cAiuCRE3_dSiZsfau0TpWpxTX6xJW-Nw&usqp=CAU");
+  background-position: center;
+  background-size: cover;
+  filter: brightness(1);
+  /* transition: color .8s; */
+  /* background-image: linear-gradient( rgb(78, 74, 74),rgb(30, 25, 25)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0u3cAiuCRE3_dSiZsfau0TpWpxTX6xJW-Nw&usqp=CAU'); */
 }
 
-.nav{
+.navbarNav {
+  position: sticky;
+  top: 0px;
+  background-color: black;
+}
+
+.packages {
+  width: 60%;
+  border: 2px solid rgb(0, 0, 0);
+  margin-top: 70px;
+  border-radius: 5px;
+  /* padding:50px; */
+  background-color: white;
+  box-shadow: 5px 2px 30px 10px black;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .packages {
+   width: 100%;
+   
+   
+    }
+
+
+}
+
+.packages-g-s {
+  width: 100%;
+  background-color: rgb(210, 117, 17);
+  border: 10px solid rgb(255, 255, 255);
+}
+
+.p-d {
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.date {
+  height: 80px;
+  width: 50%;
+  background-color: rgb(225, 231, 236);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .date {
     width: 100%;
-    position:sticky;
-    top:0px;
+  }
 }
 
-
-.packages{
-    height: 100%;
-    width: 70%;
-    border: 2px solid rgb(255, 136, 0);
-    margin-top:70px;
-    border-radius: 20px;
-    padding:50px;
+.date input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
-.options{
-    display:flex;
-    flex-direction:row;
-justify-content:space-between;
-
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-
-.guhantara_img{
-height:150px;
+.guhantara_img {
+  height: 100px;
 }
 
-.shilhaandara_img{
-background-color: rgb(0, 0, 0);
+.shilhaandara_img {
+  background-color: rgb(0, 0, 0);
 }
 
-.guhantara p , .shilhaandara p{
-    font-size:30px
+.guhantara p,
+.shilhaandara p {
+  font-size: 30px;
 }
 
-.guhantara{
-
+.guhantara {
 }
 
-.shilhaandara{
-    
-
+.shilhaandara {
 }
-.description{
+.description {
+  width: 80%;
+  padding: 20px 20px;
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-left: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+  .description img {
+    width: 100%;
+    /* padding:none; */
+  }
+  .description {
     width: 80%;
-    padding:20px 0px;
-}
-/* .Gruhantara_package{
-    display:none;
-} */
+    /* padding: 20px 20px; */
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-left: 2px;
+  }
 
-
-.P_and_d{
-    width:73%;
-    margin-top:80px;
-border-radius: 10px;
-    border:2px solid black;
-    display:flex;
-    flex-direction:row;
-justify-content:space-between;
-padding:5px 50px;
+  .guhantara_img {
+    height: 50px;
+  }
+  .shilhaandara_img {
+    height: 40px;
+  }
 }
 
- .guhantara img:hover {
-     transform:scale(1.2);
+.description:focus {
+  background-color: rgb(34, 201, 207);
+  color: white;
+}
 
- }
+.description:hover {
+  background-color: rgba(45, 45, 54, 0.1);
+  color: black;
+}
 
- .shilhaandara img:hover {
-    transform:scale(1.2);
-    display:block
+.Gruhantara_package {
+  /* display:none; */
+  padding-left: 30px;
+  padding-top: 1px;
+  background-color: rgb(225, 231, 236);
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.P_and_d {
+  width: 80%;
+  margin-top: 80px;
+  border-radius: 10px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 50px;
+}
+.P_and_d label{
+    font-size: 27px;
+}
+@media only screen and (max-width: 510px) {
+    
+.P_and_d {
+    width: 100%;
+    font-size:13px;
+    overflow: hidden;
+}
 
 }
 
-.headcount{
+.guhantara img:hover {
+  transform: scale(1.2);
+}
+
+.shilhaandara img:hover {
+  transform: scale(1.1);
+}
+
+/* .headcount{
     display:flex;flex-direction:row;
     justify-content:space-around;
     border: 2px solid rgb(244, 149, 149);
@@ -94,34 +188,122 @@ padding:5px 50px;
 .headcount h5{
 
     font-size:30px;
-}
-.payment{
-    border: 1px solid rgb(104, 46, 46);
-    border-radius:12px;
-    padding:10px 0px
-}
-
-.pay-button button{
-    padding:5px 5px;
-    width:100px;
-    margin-top:40px;
-    margin-left: 50px;
-    
+} */
+.payment {
+  border: 1px solid rgb(104, 46, 46);
+  border-radius: 12px;
+  padding: 10px 0px;
+  width: 50%;
+  background-color: rgb(225, 231, 236);
 }
 
+/* .pay-button button {
+  padding: 5px 5px;
+  width: 100px;
+  margin-top: 40px;
+  margin-left: 50px;
+} */
+.pay-button {
+  padding: 5px;
+}
 
-.adult{
-    display:flex;flex-direction:row;
+.pay-button label {
+  font-size: 30px;
+}
 
+.adult {
+  display: flex;
+  flex-direction: row;
+}
+
+.package-button {
+  overflow: hidden;
+  padding: 8px;
+  margin-bottom: 50px;
+}
+
+.package-button:focus {
+  background-color: rgb(0, 255, 157);
+  color: black;
+}
+
+@media only screen and (max-width: 260px) {
+  .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
-    .options{
-        display:flex;
-        flex-direction:column;
-    justify-content:space-between;
-    
+  .P_and_d {
+    width: 90%;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+  }
 
-    }
+  .date {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(225, 231, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+/* footer */
 
+.copyright {
+  background-color: rgb(120, 38, 38);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .footerbottom {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.footer {
+  width: 100%;
+  margin-top: auto;
+}
+.karnataka img {
+  width: 80%;
+}
+
+.footertop {
+  height: 10vh;
+  background-size: cover;
+  width: 100%;
+  margin-top: 50px;
+  background-image: url("https://guhantara.com/wp-content/themes/guhantara/images/footer.png");
+}
+
+.footerbottom {
+  margin-top: 5px;
+  width: 100%;
+  padding-left: 4%;
+  padding-right: 4%;
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #38302c;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
 }
